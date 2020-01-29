@@ -15,7 +15,7 @@ export default {};
   color: white;
   background-color: #42b883;
   display: flex;
-  padding: 8px;
+  padding: 13px;
 }
 
 .header .router-link-exact-active {
@@ -24,5 +24,6 @@ export default {};
 
 .header a {
   color: white;
+  padding: 0 7px;
 }
 </style>
