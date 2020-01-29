@@ -7,17 +7,11 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
   state: {
-    news: [],
-    jobs: [],
-    ask: [],
+    list: [],
     user: {},
     item: {},
-    list: []
   },
   getters: {
-    fetchedAsk(state) {
-      return state.ask;
-    },
     fetchedItem(state) {
       return state.item;
     }
