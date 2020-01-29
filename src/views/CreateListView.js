@@ -7,14 +7,12 @@ export default function createListView(name) {
         name: name,
         created() {
             bus.$emit("start:spinner");
-            setTimeout(() => {
-                this.$store
-                    .dispatch("FETCH_LIST", this.$route.name)
-                    .then(() => {
-                        bus.$emit("end:spinner");
-                    })
-                    .catch(error => console.log(error));
-            }, 1000);
+            this.$store
+                .dispatch("FETCH_LIST", this.$route.name)
+                .then(() => {
+                    bus.$emit("end:spinner");
+                })
+                .catch(error => console.log(error));
         },
         render(createElement) {
             return createElement(ListView);
