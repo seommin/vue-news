@@ -1,7 +1,7 @@
 <template>
   <user-profile>
     <div slot="username">{{ userInfo.id }}</div>
-    <span slot="time">{{ `Joined ${userInfo.created}` }},</span>
+    <span slot="time">{{ `Joined ${userInfo.created}` }}, </span>
     <span slot="karma">{{ userInfo.karma }}</span>
   </user-profile>
 </template>
