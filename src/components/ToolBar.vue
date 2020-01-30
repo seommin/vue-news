@@ -24,6 +24,6 @@ export default {};
 
 .header a {
   color: white;
-  padding: 0 7px;
+  padding: 0 5px;
 }
 </style>
