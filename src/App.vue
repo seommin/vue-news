@@ -9,32 +9,11 @@
 </template>
 
 <script>
-import Firebase from "firebase";
 import ToolBar from "./components/ToolBar.vue";
 import Spinner from "./components/Spinner.vue";
 import bus from "./utils/bus.js";
 
-let config = {
-  apiKey: "AIzaSyCbaeLDEAF9eymTCH4l-Aj9W2bNHI39u2s",
-  authDomain: "vuejs-seommin.firebaseapp.com",
-  databaseURL: "https://vuejs-seommin.firebaseio.com",
-  projectId: "vuejs-seommin",
-  storageBucket: "vuejs-seommin.appspot.com",
-  messagingSenderId: "225722120941",
-  appId: "1:225722120941:web:b67af5cff755937d982ae4",
-  measurementId: "G-Z7N8QQLLGM"
-};
-
-// Initialize Firebase
-let app = Firebase.initializeApp(config);
-let db = app.database();
-
 export default {
-  firebase: () => {
-    return {
-      db
-    };
-  },
   components: {
     ToolBar,
     Spinner
